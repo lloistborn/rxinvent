@@ -6,8 +6,6 @@ services:
     ports:
       - "8080:8080"
     container_name: spring-boot
-    networks:
-      - network-reactive
     environment:
       - SPRING_DATA_MONGODB_HOST=mongo
   prometheus:
@@ -15,29 +13,20 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ./prom.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
     container_name: prometheus
-    networks:
-    - network-reactive
   grafana:
     image: "grafana/grafana"
     ports:
       - "3000:3000"
     container_name: grafana
-    networks:
-    - network-reactive
   mongo:
     image: "mongo"
     ports:
       - "27017:27017"
     container_name: mongo
-    networks:
-      - network-reactive
     volumes:
       - mongodata:/data/db
-
-networks:
-  network-reactive:
 
 volumes:
   mongodata:
