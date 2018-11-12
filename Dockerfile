@@ -1,4 +1,4 @@
-FROM oracle/graalvm-ce:1.0.0-rc8
+FROM gwidx/docker-graalvm:alpine-latest
 VOLUME /tmp
 ARG JAR_FILE
 COPY ${JAR_FILE} app.jar
