@@ -7,7 +7,7 @@ rxinvent aims to implement the latest technology that integrated using
 - `Reactor-MongoDB-Redis-Kafka` 
 - `GraalVM` 
 - `Docker` 
-- `Kubernetes` 
+- `Kubernetes` (context-dekstop)
 - `Prometheus` and 
 - `Grafana`
 
