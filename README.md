@@ -1,5 +1,5 @@
 # rxinvent
-spring reactor implementation for inventory management
+spring reactor implementation for inventory management. (in progress documentation)
 
 ## intro
 rxinvent aims to implement the latest technology that integrated using 
@@ -28,15 +28,27 @@ spring-boot    | 2018-11-10 13:15:34.319  INFO 1 --- [           main] o.s.b.web
 ## testing
 
 ### docker ps
-in separate terminal, make sure all the container running well by using command `docker ps`
+in separate terminal, make sure all the container running well by using command `docker ps`. we should see `Prometheus`, `Grafana` `springio/inventory-management` and `mongo` container are running.
 ```
 
 ```
+
+### actuator
+> in essence, Actuator brings production-ready features to our application.
+Monitoring our app, gathering metrics, understanding traffic or the state of our database becomes trivial with this dependency.
+The main benefit of this library is that we can get production grade tools without having to actually implement these features ourselves.
+
+to run actuator, go to `localhost:8080/actuator`
 
 ### mongodb
+by default, whenever we successfully run this project, there are some data inserted to mongo documents.
 
-### kubectl
+to check them, run our favorite client and add connection `localhost:27017`.
 
-### prometheus
+### prometheus together with grafana
+> Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts if some condition is observed to be true.
 
-### grafana
+> Grafana is an open source visualization tool that can be used on top of a variety of different data stores.
+
+go check prometheus on `locahost:9090` and grafana `localhost:3000`
+
