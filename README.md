@@ -1,5 +1,5 @@
 # rxinvent
-spring reactor implementation for inventory management. (in progress documentation)
+spring reactor implementation for inventory management. (*in progress documentation*)
 
 ## intro
 rxinvent aims to implement the latest technology that integrated using 
