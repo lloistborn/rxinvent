@@ -1,5 +1,5 @@
 # rxinvent
-spring reactor implementation for inventory management. (*in progress documentation*)
+spring reactor implementation for case inventory management.
 
 ## intro
 rxinvent aims to implement the latest technology that integrated using 
@@ -51,4 +51,10 @@ to check them, run our favorite client and add connection `localhost:27017`.
 > Grafana is an open source visualization tool that can be used on top of a variety of different data stores.
 
 go check prometheus on `locahost:9090` and grafana `localhost:3000`
+
+### changelog
+*rxinvent 1.1.0-1.SNAPSHOT*
+
+* all dependencies are upgraded using spring-boot-starter-parent-2.1.8.RELEASE
+* add integration test for reactive mongodb
 
